@@ -36,9 +36,9 @@ margin-top:0.0em;
 
 <div class="container">
 <div class="right"><img alt="" width="400" src="../figs/Ru.jpg">
-  <h3><a name="contact">Email:</a></h3> 
-       <a href="mailto:ruchi9451100 @ gmail.com"> ruchi9451100 at gmail dot com</a><br>
-  <a href="https://drive.google.com/open?id=1trjWJOgR3a2l2JVpblNA4svnbkvypxeN">Curriculum Vitae,</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tinyurl.com/udwnob9">Research Statement</a><br>
+ <br><br>
+<img src="../figs/ruchi-emailid.png" height=20px />
+               <br>
    <br>
   <a href="https://scholar.google.com/citations?user=x1W7R2IAAAAJ&hl=en"><img src="../figs/Google-Scholar-Logo.jpg" height=35px></a> 
        &nbsp;&nbsp;&nbsp;&nbsp;
@@ -69,45 +69,54 @@ margin-top:0.0em;
       <h3> <a href="publications.html"> <u> Publications </u> </h3>
     </td>
     <td>
-      <h3> <a href="ongoing-projects.html"> <u> Ongoing Projects </u> </h3>
+      <h3> <a href="research.html"> <u> Research </u> </h3>
     </td>
     <td>
-      <h3> <a href="#contact"> <u> Contact </u> </h3>
+	    <h3> <a href="https://drive.google.com/open?id=1trjWJOgR3a2l2JVpblNA4svnbkvypxeN"> <u> CV </u> </h3>
     </td> 
   </tr>
 </table>
 </div>
 
 <div class="content">
-<h3><a name="ongoing"> Ongoing Projects </a></h3>
+<h3><a name="ongoing"> Projects </a></h3>
  <OL >
-    <LI> Numerical stabilization of the Navier-Stokes-Boussinesq system. <br>
-    In collaboration with:  
+    <LI> Numerical stabilization of the Navier-Stokes-Boussinesq system. In collaboration with:  
       <a href ="http://cpraveen.github.io/"> Prof. Praveen Chandrashekar</a>, 
       <a href ="https://www.math.tifrbng.res.in/people/mythily">Prof. Mythily Ramaswamy</a>,
       <a href ="https://www.math.univ-toulouse.fr/~raymond/">Prof. Jean-Pierre Raymond</a> <br>
-      <br>
+In this project, we are studying the numerical stabilization of two-dimensional Navier-Stokes-Boussinesq
+(NSB) equations by boundary feedback controls on the velocity and temperature of finite dimension
+localized on parts of the boundary of domain. A stationary solution of the NSB model which is
+linearly unstable is considered. The linearized system around this unstable stationary solution is
+used to construct a feedback law. This is accomplished by projecting the linearized system to the
+unstable subspace and solving a lower dimensional Ricatti equation. The feedback law is applied to
+the non-linear model to study its ability to stabilize the flow. Also, the best location of the Dirichlet
+control zone is computed. We are trying to compute the feedback with enlarged space such that it
+should stabilize the nonlinear system with perturbations as large as possible and norm of control
+variable should be small.
+	    <br>
       <P>
     </LI>
-      <LI> Adaptive finite element methods for generalized Nash equilibrium problems. <br>
+      <LI> Adaptive finite element methods for generalized Nash equilibrium problems.
        In collaboration with: 
         <a href ="https://www.wias-berlin.de/~hintermueller/">Prof. Michael Hintermüller</a>, 
         <a href ="https://wias-berlin.de:8443/people/loebhard/?lang=1">Dr. Caroline Löbhard</a> <br>
-      <br>
+      We are developing an a posteriori error analysis of adaptive finite element approximations of PDE-
+constrained generalized Nash equilibrium problem with pointwise control and state constraints.
+Moreau-Yosida-based regularization of the state constrained problem is considered. The error anal-
+ysis is based on a residual-type a posteriori error estimator that consists of edge and element residuals.
+The reliability and efficiency of the error estimator will be estimated and a bulk criterion for mesh
+refinement that also takes into account data oscillations and is realized by a greedy algorithm will
+be provided. Finally, we plan to conduct numerical tests for illustration of the convergence of the
+adaptive finite element method
+<br>
       <P>
     </LI>
-      </OL>    
-</div>
-
-<div class="content">
-<h3> Ph.D. Thesis </h3>
-<a href ="https://www.iist.ac.in/sites/default/files/library/thesis/SC12D004.pdf"> Discontinuous finite volume methods for
-  optimal control problems</a>, IIST Trivandrum, Feb 2017<br>
-<br>
-<strong> Executive Summary</strong>: This thesis introduced discontinuous finite volume approximations of PDE constrained
-  optimal control problems. <br>
-<br>
-<strong> Abstract</strong>: The main objective of this thesis is to develop and analyze discontinuous finite volume methods
+    <LI>
+	    <a href ="https://www.iist.ac.in/sites/default/files/library/thesis/SC12D004.pdf"> Discontinuous finite volume methods for optimal control problems
+		    </a><br>
+ The main objective of this thesis is to develop and analyze discontinuous finite volume methods
   for the approximation of distributed optimal control problems governed by certain partial differential equations
   subject to pointwise control constraints. In view of applications, we consider optimal control problems governed by
   semilinear elliptic, parabolic and hyperbolic problems, and Brinkman equations (that describe flow of an incompressible
@@ -121,7 +130,11 @@ margin-top:0.0em;
   the theoretical convergence rates. Finally, based on theoretical and computational observations, this thesis addresses
   concluding remarks and future work regarding possible extensions of present work to more application based and real life
   problems.
-  <br>
+
+    </LI>
+ </OL>    
+</div>
+
   <br>
 </div>
 
