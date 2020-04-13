@@ -85,18 +85,11 @@ margin-top:0.0em;
 
 
 <div class="content">
-<h3><a name="ongoing"> Projects </a></h3>
+<h3><a name="ongoing"> Research  Projects </a></h3>
  <OL >
-	 <LI> <b> Numerical stabilization of the Navier-Stokes-Boussinesq system </b>
-	 
-      <p> In collaboration with:  
-      <a href ="http://cpraveen.github.io/"> Prof. Praveen Chandrashekar</a>, 
-      <a href ="https://www.math.tifrbng.res.in/people/mythily">Prof. Mythily Ramaswamy</a>,
-      <a href ="https://www.math.univ-toulouse.fr/~raymond/">Prof. Jean-Pierre Raymond</a> </p> 
-
-     
+	 <LI> <b> <font size= "+1">  Numerical stabilization of the Navier-Stokes-Boussinesq system </font>  </b>
  <p style="text-align:justify;"> 
-We study numerical stabilization of two-dimensional Navier-Stokes-Boussinesq equations. 
+We study the  numerical stabilization of two-dimensional Navier-Stokes-Boussinesq equations. 
 The stabilization is achieved by boundary feedback controls of finite dimension applied 
 on the velocity and temperature, and localized on parts of domain
 boundary. We consider a stationary solution of the Boussinesq system which is linearly unstable. 
@@ -107,14 +100,16 @@ this projected system, by solving a Ricatti equation, of small dimension, associ
 system. The linear feedback law, stabilizing the projected system, is applied to the non-linear
 model to study its ability to locally stabilize the flow and its temperature
  </p>
+      <b> In collaboration with: </b>
+      <a href ="http://cpraveen.github.io/"> Prof. Praveen Chandrashekar</a>,
+      <a href ="https://www.math.tifrbng.res.in/people/mythily">Prof. Mythily Ramaswamy</a>,
+      <a href ="https://www.math.univ-toulouse.fr/~raymond/">Prof. Jean-Pierre Raymond</a> <br>
+     <b> Status: </b> Ongoing
+
       <P>
     </LI>
     <LI> <b> Adaptive finite element methods for generalized Nash equilibrium problems </b> 
-    <p style="text-align:justify;"> 
-    In collaboration with: 
-        <a href ="https://www.wias-berlin.de/~hintermueller/">Prof. Michael Hintermüller</a>, 
-	<a href ="https://wias-berlin.de:8443/people/loebhard/?lang=1">Dr. Caroline Löbhard</a> </p>
-    <p style="text-align:justify;">   We are developing an a posteriori error analysis of adaptive finite element 
+    <p style="text-align:justify;">  We are developing an a posteriori error analysis of adaptive finite element 
  approximations of  generalized Nash equilibrium problem with pointwise control and state constraints.
 Moreau-Yosida-based regularization of the state constrained problem is considered. The error analysis is based on 
 a residual-type a posteriori error estimator that consists of edge and element residuals.
@@ -123,26 +118,29 @@ refinement that also takes into account data oscillations and is realized by a g
 be provided. Finally, we plan to conduct numerical tests for illustration of the convergence of the
 adaptive finite element method.
     </p>
+    <b> In collaboration with: </b> 
+        <a href ="https://www.wias-berlin.de/~hintermueller/">Prof. Michael Hintermüller</a>, 
+        <a href ="https://wias-berlin.de:8443/people/loebhard/?lang=1">Dr. Caroline Löbhard</a>  <br>
+    <b> Status: </b> Ongoing 
       <P>
     </LI>
     <LI> <b>  Discontinuous finite volume methods for optimal control problems </b>
        <a href ="https://www.iist.ac.in/sites/default/files/library/thesis/SC12D004.pdf"> (Ph.D. Thesis) </a> 
   <p style="text-align:justify;"> 
-  The main objective of this thesis is to develop and analyze discontinuous finite volume methods
-  for the approximation of distributed optimal control problems governed by certain partial differential equations
-  subject to pointwise control constraints. In view of applications, we consider optimal control problems governed by
-  semilinear elliptic, parabolic and hyperbolic problems, and Brinkman equations (that describe flow of an incompressible
-  viscous fluid through a porous medium). For the discretization of state and costate variables, we utilize piecewise linear
-  discontinuous finite volume schemes, whereas three different strategies are used for control approximation: variational
-  discretization approach—in which control set is not discretized explicitly but discretized by a projection of the discrete
-  costate variables, as well as piecewise constant and piecewise linear discretizations. As the resulting discrete optimal
-  systems are non-symmetric, we employ the so-called optimize-then-discretize approach to approximate the control problem.
-  A priori error estimates in suitable natural norms are derived for control, state and costate variables. Further, numerical
-  experiments are presented to illustrate the performance of the proposed schemes and to confirm the predicted accuracy of
-  the theoretical convergence rates. Finally, based on theoretical and computational observations, this thesis addresses
-  concluding remarks and future work regarding possible extensions of present work to more application based and real life
-  problems. </p>
-
+In my Ph.D. work, we have developed and analyzed a robust numerical scheme called 
+discontinuous finite volume method (DFVM) for the approximation of distributed optimal 
+control problems subject to pointwise control constraints. The DFVM is a combination of 
+finite volume element method and discontinuous Galerkin method and retain desirable properties 
+of both methods such as mass conservation, local mesh adaptivity, element-wise conservative, 
+allow different degree polynomials in different elements and easily handle the boundary conditions. 
+We consider semilinear elliptic, semilinear parabolic, semilinear hyperbolic and Brinkman optimal control problems. 
+The Brinkman equations describe the motion of an incompressible viscous fluid within an array of porous particles,
+and according to the flow regime characterized by the ratio between permeability and viscosity,
+it can represent both the Darcy and Stokes limits. We have derived optimal order a priori
+error estimtes in suitable natural norms and conducted numerical experiments to illustrate the
+performance of the proposed scheme and to confirm the predicted accuracy of the theoretical
+convergence rates.
+  </p>
     </LI>
  </OL>    
 </div>
