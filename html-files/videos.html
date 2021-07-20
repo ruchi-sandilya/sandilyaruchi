@@ -16,33 +16,6 @@ div.container{width:90%; margin:1%; line-height:142%;}
 div.right{float:right;width:300px; margin:2em; padding:1em;}
 div.content{margin-left:1%; padding:1em;}
 </style>
-
-
-<style>
-
-    .collapsible {
-        background-color: #E0E0E0;
-        cursor: pointer;
-        padding: 18px;
-        border: none;
-        text-align: left:
-        outline: none;
-        font-size: 15px;
-    }
-
-    .active,
-    .collapse:hover {
-        background-color: #B8B8B8;
-    }
-
-    .text {
-        background-color: #e1ffc2;
-        display: none;
-        font-size: 20px;
-    }
-</style>
-
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5502848-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -50,6 +23,7 @@ div.content{margin-left:1%; padding:1em;}
   gtag('js', new Date());
   gtag('config', 'UA-5502848-3');
 </script>
+
 <style type="text/css">
   div.foo p {
 margin-bottom:0.0em; 
@@ -59,6 +33,7 @@ margin-top:0.0em;
 </head>
 
 <body style="background-color: rgb(255, 230, 230);">
+
 
 <div class="container">
 <div class="right"><img alt="" width="300px" src="../figs/Ru.jpg">
@@ -106,7 +81,7 @@ Welcome to my website! I am a postdoctoral researcher in numerical analysis and 
     </td>
     <td>
               <h3><a href="videos.html"><u> <font size="+2">Videos</font></u></h3>
-    </td>      
+    </td>
     <td>
       <h3>
               <a href="https://drive.google.com/file/d/1wP4fpVVqoXE7I_YXOZ4lG9GNN3wO9jqc/view?usp=sharing"><u><font size="+2">CV</font></u></h3>
@@ -119,48 +94,15 @@ Welcome to my website! I am a postdoctoral researcher in numerical analysis and 
 </table>
 </div>
 
-
-
-
-
-
-<div class="content">
-<h3><a name="ongoing"> Selected  Research  Projects </a></h3>
- <ul>
-<LI> <button type="button" class="collapsible" ><b> Feedback stabilization of the Boussinesq system  </b> &nbsp;&nbsp;&nbsp;&nbsp; TIFR CAM group (2017-2020) </button>
- <p style="text-align:justify;">
-The Boussinesq system are frequently used to model complex fluid flows that occur naturally in modeling, designing, and controlling energy-efficient building systems. The design of such energy saving buildings is essential to meet national energy and environmental challenges. The Boussinesq systems are unstable and sensitive to noise and disturbances for certain values of its parameters. In this project, we developed efficient feedback control strategies to stabilize the system and optimize energy use by controlling the indoor environment such as temperature, humidity, and air quality in the building. We developed software in Python using FEniCs, a finite element library, to solve the control system.
-</p>
-<LI> <button type="button" class="collapsible" ><b> Learning-augmented control for complex fluid flows  </b> &nbsp;&nbsp;&nbsp;&nbsp;  UMBC (2020-current) </button> 
-<p style="text-align:justify;">
-Our goal is to design novel techniques for control and feedback stabilization of unstable complex fluid models with uncertain parameters using neural networks (NN) with a Bayesian approach. We use the linearized system around an unstable stationary solution to construct NN-based feedback law to achieve stabilization of the nonlinear system. We are performing systematic numerical experiments to illustrate the efficacy of our algorithms. The software is being developed in python using PyTorch and other machine learning libraries.
-</p>
-<LI> <button type="button" class="collapsible" ><b> Optimal control problems  </b> &nbsp;&nbsp;&nbsp;&nbsp; Ph.D. Thesis (2012-2017) </button>
-<p style="text-align:justify;">
-The optimal control problems governed by partial differential equations (PDEs) represent mathematical models for applications including laser thermotherapy for cancer treatment, modeling of drug kinetics, modeling and simulation for optimization of in vitro tissue growth environments in tissue engineering, optimal shape design of an aircraft, and enhanced oil recovery in petroleum engineering. In this project, I have analyzed a novel, robust numerical technique called discontinuous finite volume method for solving PDE constrained optimal control problems and created software in MATLAB.
-</p>
+ 
+<ul>
+  <button type="button" class="collapsible" ><b> Please watch my talk on feedback stabilization of the Boussinesq system below </b> </button>
+  <video width="420" height="300" controls>
+  <source src="../video/Ruchi_NSB_talk.mp4" type="video/mp4">
+</video>
 </ul>
+       
+  </p>
 </div>
-
-
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-
-
-</div>
+</ul>
 </body></html>
