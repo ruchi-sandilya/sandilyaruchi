@@ -17,7 +17,6 @@ div.right{float:right;width:300px; margin:2em; padding:1em;}
 div.content{margin-left:1%; padding:1em;}
 </style>
 
-
 <style>
 
     .collapsible {
@@ -121,44 +120,52 @@ I am a postdoctoral researcher in the <a href="https://grosenicklab.super.site/"
 <div class="content">
 <h3><a name="ongoing"> Selected  Research  Projects </a></h3>
  <ul>
-<LI> <button type="button" class="collapsible" ><b> AI based diagnosis and treatment of depression  </b> &nbsp;&nbsp;&nbsp;&nbsp; WCM (2021-current) </button> 
+
+<LI> <button type="button" class="collapsible" ><b> Nonlinearly Controllable Counterfactuals  </b> &nbsp;&nbsp;&nbsp;&nbsp; WCM (2025) </button> 
 <p style="text-align:justify;">
-Major depression is a common disorder with high rates of treatment resistance. In this project, my goal is to bring the ideas of control theory and machine learning for the development of personalized closed-loop therapy for treatment-resistant depression. 
+In this project, we develop controllable and counterfactual generative models for complex physical systems, personalized healthcare, and explainable AI. Using state-of-the-art generative models, we generate precise, nonlinearly controllable counterfactuals for nonlinear dynamic systems where traditional methods fall short. Validated in applications like flow past a cylinder and TMS-induced electric field modeling, these models leverage numerically simulated benchmarks for scenario testing and optimization without direct experimentation. This work has applications in personalized neurostimulation for treatment-resistant depression and aerodynamic design optimization.
 </p>
-<LI> <button type="button" class="collapsible" ><b> Feedback stabilization of the Boussinesq system  </b> &nbsp;&nbsp;&nbsp;&nbsp; TIFR CAM (2017-2020) </button> <u> <a href = "Boussinesq_slides.html"> Slides </a> </u> &nbsp;&nbsp  <u> <a href = "Boussinesq_talk.html"> Video </a> </u> <br>
+
+<LI> <button type="button" class="collapsible" ><b> Generalizing CNNs to graphs with learnable neighborhood quantization
+  </b> &nbsp;&nbsp;&nbsp;&nbsp; WCM (2024) </button>
+<p style="text-align:justify;">
+In this project, we introduced Quantized Graph Convolution Networks (QGCNs), a novel framework that extends CNNs to graph data, addressing the challenge of analyzing non-array-structured information such as biological and social networks. QGCNs achieve this by decomposing convolutions into non-overlapping sub-kernels, seamlessly adapting to graph structures while retaining CNN strengths. This approach, integrated into a residual network, generalizes to graphs of any size and dimension through a learnable multinomial assignment mechanism. QGCNs match or exceed state-of-the-art GNNs on benchmark datasets and excel in predicting nonlinear dynamics on finite element graphs, offering a powerful and expressive model for graph-based learning.<br>
+<u> <a href = "https://proceedings.neurips.cc/paper_files/paper/2024/file/95ddc8f24ad9698e3f2c4a014602ee74-Paper-Conference.pdf"> Paper </a> </u>  &nbsp;&nbsp <u> <a href = "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94335.png?t=1733959197.3381274"> Poster </a> </u> &nbsp;&nbsp <u> <a href = "https://github.com/Grosenick-Lab-Cornell/QuantNets"> GitHub Code </a> </u> <br>
+</p>
+
+<LI> <button type="button" class="collapsible" ><b> Feedback stabilization of the Boussinesq system  </b> &nbsp;&nbsp;&nbsp;&nbsp; TIFR CAM (2021) </button>
  <p style="text-align:justify;"> 
-In my postdoctoral research, I developed feedback control laws to stabilize the nonlinear Boussinesq system, optimizing energy use in buildings and aircraft while improving indoor air quality. This work also laid the foundation for using generative models to accelerate fluid dynamics simulations.
+In this project, we developed feedback control laws to stabilize unstable fluid dynamics in the Boussinesq system, which models non-isothermal fluid flows. Using a projected linearized system and solving a small-dimensional Riccati equation, we demonstrated effective stabilization of flow and temperature. This work has practical applications in optimizing energy use in buildings and aircraft by managing indoor environmental factors, crucial for energy efficiency and emissions reduction. Additionally, the COVID-19 pandemic underscored the importance of indoor air quality, further highlighting the impact of this research.<br>
+<u> <a href = "Boussinesq_slides.html"> Slides </a> </u> &nbsp;&nbsp  <u> <a href = "Boussinesq_talk.html"> Video </a> </u> <br>
 </p>
+
 <!--<LI> <button type="button" class="collapsible" ><b> AI based control of complex fluid flows  </b> &nbsp;&nbsp;&nbsp;&nbsp;  UMBC (2020-current) </button> 
 <p style="text-align:justify;">
 Our goal is to design novel techniques for control and feedback stabilization of unstable complex fluid models with uncertain parameters using neural networks (NN) with a Bayesian approach. We use the linearized system around an unstable stationary solution to construct NN-based feedback law to achieve stabilization of the nonlinear system. We are performing systematic numerical experiments to illustrate the efficacy of our algorithms. The software is being developed in python using PyTorch and other machine learning libraries.
 </p>-->
-<LI> <button type="button" class="collapsible" ><b> PDE constrained optimal control problems  </b> &nbsp;&nbsp;&nbsp;&nbsp; Ph.D. (2012-2017) </button>
+
+<LI> <button type="button" class="collapsible" ><b> PDE constrained optimal control problems  </b> &nbsp;&nbsp;&nbsp;&nbsp; Ph.D. (2017) </button>
 <p style="text-align:justify;">
-My graduate research contributions were focused on developing efficient solution techniques for difficult optimal control problems governed by partial differential equations (PDEs). These equations represent mathematical models for many real-life applications including laser thermotherapy for cancer treatment, modeling of drug kinetics, modeling of complex brain dynamics, modeling and simulation for optimization of in vitro tissue growth environments in tissue engineering, optimal shape design of an aircraft, and enhanced oil recovery in petroleum engineering. I derived the optimal convergence estimates of the finite element schemes and verified the accuracy and efficiency of the method by conducting several numerical tests in MATLAB. In view of applications to engineering and biology, I extended the theory and practice of controls to the oil recovery techniques based on the injection of immiscible fluids in the reservoirs to extract hydrocarbons from the earth’s subsurface and linear poroelasticity equations that can be used to model blood flows through the beating myocardium.
+During my doctoral research, I developed and analyzed discontinuous finite volume methods for solving PDE-constrained optimal control problems under pointwise control constraints. My work covered semilinear elliptic, parabolic, hyperbolic problems, and Brinkman equations, with applications in cancer treatment, drug kinetics, brain dynamics, tissue engineering, aircraft design, and enhanced oil recovery. Using an optimize-then-discretize approach, I explored variational, piecewise constant, and piecewise linear control approximations, deriving a priori error estimates and validating theoretical convergence through numerical experiments. I further extended these methods to hydrocarbon extraction via immiscible fluid injection and blood flow modeling through the myocardium, demonstrating their broad applicability in engineering and biological systems.
 </p>
 </ul>
 </div>
 
 
-
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.querySelectorAll(".collapsible");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+    coll.forEach(function(button) {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+        });
+    });
+});
 </script>
-
 
 </div>
 </body></html>
+
