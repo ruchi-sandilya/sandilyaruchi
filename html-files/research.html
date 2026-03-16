@@ -17,30 +17,6 @@ div.right{float:right;width:300px; margin:2em; padding:1em;}
 div.content{margin-left:1%; padding:1em;}
 </style>
 
-<style>
-
-    .collapsible {
-        background-color: #E0E0E0;
-        cursor: pointer;
-        padding: 18px;
-        border: none;
-        text-align: left:
-        outline: none;
-        font-size: 15px;
-    }
-
-    .active,
-    .collapse:hover {
-        background-color: #B8B8B8;
-    }
-
-    .text {
-        background-color: #e1ffc2;
-        display: none;
-        font-size: 20px;
-    }
-</style>
-
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5502848-3"></script>
 <script>
@@ -103,7 +79,7 @@ My research develops mathematically grounded machine learning methods to model a
      
     <td>
       <h3>
-              <a href="https://drive.google.com/file/d/1i5peQuXJbAXy7WDQgElMotu_F5aT9erJ/view?usp=drive_link"><u><font size="+2">CV</font></u></h3>
+              <a href="https://drive.google.com/file/d/1091GaYqbdEJpIQcXps9km6wL6OtX4siS/view?usp=drive_link"><u><font size="+2">CV</font></u></h3>
     </td>
 
 	   <!-- <td> 
@@ -114,62 +90,50 @@ My research develops mathematically grounded machine learning methods to model a
 </div>
 
 
-
-
-
-
-<div class="content">
-<h3><a name="ongoing"> Selected  Research  Projects </a></h3>
+<section>
+<h2><a name="ongoing"> Selected  Research  Projects </a></h2>
  <ul>
 
-<LI> <button type="button" class="collapsible" ><b> Nonlinearly Controllable Counterfactuals with Diffusion  </b> &nbsp;&nbsp;&nbsp;&nbsp; WCM (2025) </button> 
+<h3> Contrastive Diffusion Alignment (ConDA) — 2025 </h3> 
 <p style="text-align:justify;">
-My research advances generative modeling for complex dynamical systems in the physical and biomedical sciences. I develop methods that make high-dimensional systems, ranging from fluid flows to neural activity and therapeutic neurostimulation, predictable, interpretable, and controllable.
-A core part of this work is Contrastive Diffusion Alignment (ConDA), a framework that organizes diffusion-model latent spaces using contrastive learning so that latent directions correspond to meaningful system dynamics. This alignment enables nonlinear trajectory traversal for interpolation, extrapolation, and controlled generation. ConDA demonstrates that diffusion embeddings naturally contain dynamical structure, and that making this structure explicit is key to creating reliable generative surrogates for real-world physical and biological processes.
-By integrating dynamical systems, control theory, and generative modeling, my work contributes toward data-driven digital twins and adaptive control strategies for complex physical and physiological environments
+My recent work develops generative models for complex dynamical systems in physics and biomedicine. I introduced Contrastive Diffusion Alignment (ConDA), a framework that organizes diffusion-model latent spaces using contrastive learning so that latent directions correspond to meaningful system dynamics. This alignment enables nonlinear trajectory traversal and controllable generation.
+
+ConDA demonstrates that diffusion embeddings naturally encode dynamical structure and that explicitly aligning this structure enables interpretable and controllable generative surrogates. The method has been validated across diverse domains including fluid flows, neural activity, facial dynamics, and therapeutic neurostimulation, advancing the development of data-driven digital twins for scientific and medical systems.
 </p>
 
-<LI> <button type="button" class="collapsible" ><b> Quantized Graph Convolution Networks
-  </b> &nbsp;&nbsp;&nbsp;&nbsp; WCM (2024) </button>
+<h3> Quantized Graph Convolution Networks (QGCN) — 2024 </h3>
 <p style="text-align:justify;">
-In this project, we introduced Quantized Graph Convolution Networks (QGCNs), a novel framework that extends CNNs to graph data, addressing the challenge of analyzing non-array-structured information such as biological and social networks. QGCNs achieve this by decomposing convolutions into non-overlapping sub-kernels, seamlessly adapting to graph structures while retaining CNN strengths. This approach, integrated into a residual network, generalizes to graphs of any size and dimension through a learnable multinomial assignment mechanism. QGCNs match or exceed state-of-the-art GNNs on benchmark datasets and excel in predicting nonlinear dynamics on finite element graphs, offering a powerful and expressive model for graph-based learning.<br>
-<u> <a href = "https://proceedings.neurips.cc/paper_files/paper/2024/file/95ddc8f24ad9698e3f2c4a014602ee74-Paper-Conference.pdf"> Paper </a> </u>  &nbsp;&nbsp <u> <a href = "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94335.png?t=1733959197.3381274"> Poster </a> </u> &nbsp;&nbsp <u> <a href = "https://github.com/Grosenick-Lab-Cornell/QuantNets"> GitHub Code </a> </u> <br>
+We introduced Quantized Graph Convolution Networks (QGCNs), a framework extending CNNs to graph-structured data such as biological and social networks. QGCNs decompose convolutions into non-overlapping sub-kernels that adapt naturally to irregular graph domains while retaining the strengths of CNN architectures.
+
+Integrated within a residual network, QGCNs generalize to graphs of arbitrary size and dimension through a learnable multinomial assignment mechanism. The model achieves state-of-the-art performance on benchmark graph datasets and is particularly effective for predicting nonlinear dynamics on finite-element graphs, providing a powerful architecture for scientific machine learning on irregular domains.
+<br><u> <a href = "https://proceedings.neurips.cc/paper_files/paper/2024/file/95ddc8f24ad9698e3f2c4a014602ee74-Paper-Conference.pdf"> Paper </a> </u>  &nbsp;&nbsp <u> <a href = "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94335.png?t=1733959197.3381274"> Poster </a> </u> &nbsp;&nbsp <u> <a href = "https://github.com/Grosenick-Lab-Cornell/QuantNets"> GitHub Code </a> </u> <br>
 </p>
 
-<LI> <button type="button" class="collapsible" ><b> Feedback Stabilization of the Boussinesq system  </b> &nbsp;&nbsp;&nbsp;&nbsp; TIFR CAM (2021) </button>
+<h3> Feedback Stabilization of the Boussinesq System — 2021 </h3>
  <p style="text-align:justify;"> 
-In this project, we developed feedback control laws to stabilize unstable fluid dynamics in the Boussinesq system, which models non-isothermal fluid flows. Using a projected linearized system and solving a small-dimensional Riccati equation, we demonstrated effective stabilization of flow and temperature. This work has practical applications in optimizing energy use in buildings and aircraft by managing indoor environmental factors, crucial for energy efficiency and emissions reduction. Additionally, the COVID-19 pandemic underscored the importance of indoor air quality, further highlighting the impact of this research.<br>
-<u> <a href = "Boussinesq_slides.html"> Slides </a> </u> &nbsp;&nbsp  <u> <a href = "Boussinesq_talk.html"> Video </a> </u> &nbsp;&nbsp  <u> <a href = "https://github.com/ruchi-sandilya/Feedback_stabilization_Boussinesq_system"> GitHub Code </a> </u>  <br>
+In this project, I developed feedback control laws for stabilizing unstable buoyancy-driven fluid flows governed by the Boussinesq equations. By projecting the linearized system onto unstable modes and solving a low-dimensional Riccati equation, we derived boundary feedback controllers that stabilize velocity and temperature dynamics.
+
+This work demonstrates how control-theoretic model reduction can regulate nonlinear fluid systems, with applications in energy-efficient ventilation, climate control, and aerospace environmental systems.
+<br><u> <a href = "Boussinesq_slides.html"> Slides </a> </u> &nbsp;&nbsp  <u> <a href = "Boussinesq_talk.html"> Video </a> </u> &nbsp;&nbsp  <u> <a href = "https://github.com/ruchi-sandilya/Feedback_stabilization_Boussinesq_system"> GitHub Code </a> </u>  <br>
 </p>
 
-<!--<LI> <button type="button" class="collapsible" ><b> AI based control of complex fluid flows  </b> &nbsp;&nbsp;&nbsp;&nbsp;  UMBC (2020-current) </button> 
+<h3> Discontinuous Finite Volume Methods for PDE-Constrained Optimal Control — 2017 </h3>
 <p style="text-align:justify;">
-Our goal is to design novel techniques for control and feedback stabilization of unstable complex fluid models with uncertain parameters using neural networks (NN) with a Bayesian approach. We use the linearized system around an unstable stationary solution to construct NN-based feedback law to achieve stabilization of the nonlinear system. We are performing systematic numerical experiments to illustrate the efficacy of our algorithms. The software is being developed in python using PyTorch and other machine learning libraries.
-</p>-->
+During my PhD, I developed and analyzed discontinuous finite-volume methods for PDE-constrained optimal control problems with pointwise control constraints. The framework addressed elliptic, parabolic, hyperbolic, and Brinkman flow systems using an optimize-then-discretize approach.
 
-<LI> <button type="button" class="collapsible" ><b> Discontinuous Finite Volume Methods for Optimal Control Problems  </b> &nbsp;&nbsp;&nbsp;&nbsp; Ph.D. (2017) </button>
-<p style="text-align:justify;">
-During my doctoral research, I developed and analyzed discontinuous finite volume methods for solving PDE-constrained optimal control problems under pointwise control constraints. My work covered semilinear elliptic, parabolic, hyperbolic problems, and Brinkman equations, with applications in cancer treatment, drug kinetics, brain dynamics, tissue engineering, aircraft design, and enhanced oil recovery. Using an optimize-then-discretize approach, I explored variational, piecewise constant, and piecewise linear control approximations, deriving a priori error estimates and validating theoretical convergence through numerical experiments. I further extended these methods to hydrocarbon extraction via immiscible fluid injection and blood flow modeling through the myocardium, demonstrating their broad applicability in engineering and biological systems.<br>
-<u> <a href = "https://events.iist.ac.in/phd/thesis/SC12D004%20FT.pdf"> Thesis </a>
+I derived a priori error estimates and optimal convergence guarantees, and validated them through numerical experiments. These methods were applied to problems in biomedical modeling, drug transport, fluid mechanics, and energy systems, establishing reliable numerical foundations for control of complex multiphysics systems.
+<br><u> <a href = "https://events.iist.ac.in/phd/thesis/SC12D004%20FT.pdf">Ph.D. Thesis </a></u> 
 </p>
+
 </ul>
-</div>
+</section>
 
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var coll = document.querySelectorAll(".collapsible");
-
-    coll.forEach(function(button) {
-        button.addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
-        });
-    });
-});
-</script>
+<section>
+<h2> Research Vision </h2>
+My research program unifies physics-informed modeling, optimal feedback control, and generative machine learning to build controllable generative digital twins of complex systems. By combining PDE models, control theory, and generative AI, I develop interpretable models that enable prediction, counterfactual simulation, and adaptive control in domains such as fluid dynamics, neuroscience, and computational medicine.
+</p>
+</section>
 
 </div>
+</ul>
 </body></html>
-
